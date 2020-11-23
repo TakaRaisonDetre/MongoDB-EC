@@ -9,6 +9,7 @@ import SigninScreen from './screens/Signin.screen';
 import RegisterScreen from './screens/Register.screen';
 import { signout } from './actions/userActions';
 import ShippingAddressScreen from './screens/ShippingAddress.screen';
+import PaymentMethodScreen from './screens/PaymentMethod.screen';
 
 function App() {
 
@@ -57,6 +58,8 @@ function App() {
         <Route exact path="/signin" component={SigninScreen}></Route>
         <Route exact path="/register" component={RegisterScreen}></Route>
         <Route exact path="/shipping" component={ShippingAddressScreen}></Route>
+        <Route exact path="/payment" component={PaymentMethodScreen}></Route>
+       
         <Route exact path="/" component={HomeScreen}></Route>
         
       </main>
